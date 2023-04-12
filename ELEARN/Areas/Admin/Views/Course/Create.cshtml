@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+
+
+<div style="padding-left:200px" class="container my-5">
+    <a asp-action="Index" style="border:1px solid red;margin-bottom:20px;margin-top:20px;margin-left:700px;text-decoration-color:white;" class="btn btn-outline-danger">Go to Course</a> <a asp-action="Create" style="border:1px solid green;margin-bottom:20px;;margin-top:20px;margin-left:10px;text-decoration-color:white;" class="btn btn-outline-success">Create</a>
+    <h1>Create Course</h1>
+    <form class="forms-sample">
+        <label for="exampleFormControlInput1">Add Author Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author Name">
+        <label for="exampleFormControlInput1">Add Author Image</label>
+        <input class="form-control" type="file" id="customFile">
+        <label for="exampleFormControlInput1">Add Course Image</label>
+        <input class="form-control" type="file" id="customFile">
+        <label for="exampleFormControlInput1">Add Course Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Course Name">
+        <label for="exampleFormControlInput1">Add Course Description</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Course Description">
+        <label for="exampleFormControlInput1">Add Course Price</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Course Price">
+        <div class="my-3">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a type="button" asp-action="Index" class="btn btn-light">Cancel</a>
+        </div>
+    </form>
+</div>

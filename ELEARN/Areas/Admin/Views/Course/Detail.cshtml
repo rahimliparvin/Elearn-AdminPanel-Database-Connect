@@ -1,0 +1,50 @@
+﻿@model Course
+@{
+    ViewData["Title"] = "CourseDetail";
+}
+
+<h1>Detail</h1>
+
+
+<div style="padding-left:200px" class="container my-5">
+
+    <h1>Course</h1>
+    <a asp-action="Index" style="border:1px solid red;margin-bottom:20px;margin-top:20px;margin-left:700px;text-decoration-color:white;" class="btn btn-outline-danger">Go to Course</a> <a asp-action="Create" style="border:1px solid green;margin-bottom:20px;;margin-top:20px;margin-left:10px;text-decoration-color:white;" class="btn btn-outline-success">Create</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">CourseName</th>
+                <th scope="col">Description</th>
+                <th scope="col">AuthorName</th>
+                <th scope="col">AuthorImage</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+              
+
+                <tr>
+
+                    <td> <img style="width:100px" src="~/images/@Model.CourseImages.FirstOrDefault()?.Image"> </td>
+                    <td>@Model.Name</td>
+                    <td>@Model.Description</td>
+                    <td>@Model.Author.Name</td>
+                    <td> <img style="width:70px;height:70px;border-radius:50%" src="~/images/@Model.Author.Image"> </td>
+
+                </tr>
+
+        
+
+
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
